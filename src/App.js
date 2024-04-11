@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route,  } from 'react-router-dom';
+import { Routes, Route  } from 'react-router-dom';
 import Header from './components/header';
 import Footer from './components/footer';
 import HomePage from './pages/HomePage';
@@ -8,20 +8,23 @@ import GalleryPage from './pages/GalleryPage';
 import './App.css';
 
 function App() {
-  return (
-    <Router>
+  return (<>
       <div className="flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow">
-  
-            <Route path="/" exact component={HomePage} />
-            <Route path="/documentation" component={DocumentationPage} />
-            <Route path="/gallery" component={GalleryPage} />
+        <Routes>
+
+            <Route path="/" element={HomePage} />
+            <Route path="/documentation" element={DocumentationPage} />
+            <Route path="/gallery" element={GalleryPage} />
+                </Routes>
+
   
         </main>
         <Footer />
       </div>
-    </Router>
+  </>
+   
   );
 }
 
