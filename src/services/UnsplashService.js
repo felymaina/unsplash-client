@@ -46,4 +46,4 @@ export const fetchCollections = async (page = 1, perPage = 10) => {
   }
 };
 
-// Add more functions as needed for different endpoints
+

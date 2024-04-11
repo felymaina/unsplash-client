@@ -1,10 +1,11 @@
 import React from 'react';
-import { Routes, Route  } from 'react-router-dom';
+// import { Routes, Route  } from 'react-router-dom';
 import Header from './components/header';
 import Footer from './components/footer';
 import HomePage from './pages/HomePage';
 import DocumentationPage from './pages/DocumentationPage';
 import GalleryPage from './pages/GalleryPage';
+import {  Route,Routes } from 'react-router-dom';
 import './App.css';
 
 function App() {
@@ -13,13 +14,11 @@ function App() {
         <Header />
         <main className="flex-grow">
         <Routes>
-
-            <Route path="/" element={HomePage} />
+           <Route path="/" element={HomePage} />
             <Route path="/documentation" element={DocumentationPage} />
             <Route path="/gallery" element={GalleryPage} />
-                </Routes>
+        </Routes>
 
-  
         </main>
         <Footer />
       </div>
