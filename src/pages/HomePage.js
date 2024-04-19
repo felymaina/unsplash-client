@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import the Link component
 
-function HomePage() {
+function  HomePage() {
   return (
     <div className="container mx-auto p-8">
       <h1 className="text-4xl font-bold">Welcome to the Unsplash API Client</h1>
